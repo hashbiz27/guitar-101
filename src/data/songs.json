@@ -1,0 +1,150 @@
+[
+  {
+    "id": "wonderwall-oasis",
+    "title": "Wonderwall",
+    "artist": "Oasis",
+    "difficulty": "beginner",
+    "tempo": 87,
+    "timeSignature": { "numerator": 4, "denominator": 4 },
+    "key": "F# minor",
+    "capo": 2,
+    "sections": [
+      {
+        "label": "Verse",
+        "progression": [
+          { "chordId": "Em-minor", "beats": 4 },
+          { "chordId": "G-major", "beats": 4 },
+          { "chordId": "D-major", "beats": 4 },
+          { "chordId": "A-major", "beats": 4 }
+        ],
+        "repeatCount": 2
+      },
+      {
+        "label": "Chorus",
+        "progression": [
+          { "chordId": "C-major", "beats": 4 },
+          { "chordId": "Em-minor", "beats": 4 },
+          { "chordId": "G-major", "beats": 4 },
+          { "chordId": "Em-minor", "beats": 4 }
+        ]
+      }
+    ],
+    "chordsUsed": ["Em-minor", "G-major", "D-major", "A-major", "C-major"],
+    "tags": ["rock", "britpop", "strumming"],
+    "yearPublished": 1995,
+    "strummingPattern": "D DU UDU"
+  },
+  {
+    "id": "knockin-on-heavens-door-dylan",
+    "title": "Knockin' on Heaven's Door",
+    "artist": "Bob Dylan",
+    "difficulty": "beginner",
+    "tempo": 72,
+    "timeSignature": { "numerator": 4, "denominator": 4 },
+    "key": "G major",
+    "sections": [
+      {
+        "label": "Verse / Chorus",
+        "progression": [
+          { "chordId": "G-major", "beats": 4 },
+          { "chordId": "D-major", "beats": 4 },
+          { "chordId": "Am-minor", "beats": 4 },
+          { "chordId": "G-major", "beats": 4 },
+          { "chordId": "D-major", "beats": 4 },
+          { "chordId": "C-major", "beats": 4 }
+        ],
+        "repeatCount": 4
+      }
+    ],
+    "chordsUsed": ["G-major", "D-major", "Am-minor", "C-major"],
+    "tags": ["folk", "rock", "classic", "strumming"],
+    "yearPublished": 1973,
+    "strummingPattern": "D DU DU"
+  },
+  {
+    "id": "house-of-the-rising-sun-animals",
+    "title": "House of the Rising Sun",
+    "artist": "The Animals",
+    "difficulty": "beginner",
+    "tempo": 78,
+    "timeSignature": { "numerator": 6, "denominator": 8 },
+    "key": "A minor",
+    "sections": [
+      {
+        "label": "Main Progression",
+        "progression": [
+          { "chordId": "Am-minor", "beats": 6 },
+          { "chordId": "C-major", "beats": 6 },
+          { "chordId": "D-major", "beats": 6 },
+          { "chordId": "F-major", "beats": 6 },
+          { "chordId": "Am-minor", "beats": 6 },
+          { "chordId": "C-major", "beats": 6 },
+          { "chordId": "E-major", "beats": 6 },
+          { "chordId": "E-major", "beats": 6 }
+        ],
+        "repeatCount": 3
+      }
+    ],
+    "chordsUsed": ["Am-minor", "C-major", "D-major", "F-major", "E-major"],
+    "tags": ["rock", "classic", "fingerpicking", "arpeggio"],
+    "yearPublished": 1964,
+    "strummingPattern": "Arpeggio"
+  },
+  {
+    "id": "horse-with-no-name-america",
+    "title": "A Horse with No Name",
+    "artist": "America",
+    "difficulty": "beginner",
+    "tempo": 120,
+    "timeSignature": { "numerator": 4, "denominator": 4 },
+    "key": "E minor",
+    "sections": [
+      {
+        "label": "Verse / Chorus",
+        "progression": [
+          { "chordId": "Em-minor", "beats": 4 },
+          { "chordId": "D-major", "beats": 4 }
+        ],
+        "repeatCount": 8
+      }
+    ],
+    "chordsUsed": ["Em-minor", "D-major"],
+    "tags": ["folk", "rock", "easy", "two-chord"],
+    "yearPublished": 1971,
+    "strummingPattern": "D DU UDU"
+  },
+  {
+    "id": "brown-eyed-girl-morrison",
+    "title": "Brown Eyed Girl",
+    "artist": "Van Morrison",
+    "difficulty": "beginner",
+    "tempo": 147,
+    "timeSignature": { "numerator": 4, "denominator": 4 },
+    "key": "G major",
+    "sections": [
+      {
+        "label": "Verse",
+        "progression": [
+          { "chordId": "G-major", "beats": 4 },
+          { "chordId": "C-major", "beats": 4 },
+          { "chordId": "G-major", "beats": 4 },
+          { "chordId": "D-major", "beats": 4 }
+        ],
+        "repeatCount": 4
+      },
+      {
+        "label": "Chorus",
+        "progression": [
+          { "chordId": "C-major", "beats": 4 },
+          { "chordId": "D-major", "beats": 4 },
+          { "chordId": "G-major", "beats": 4 },
+          { "chordId": "Em-minor", "beats": 4 }
+        ]
+      }
+    ],
+    "chordsUsed": ["G-major", "C-major", "D-major", "Em-minor"],
+    "tags": ["rock", "pop", "classic", "strumming"],
+    "yearPublished": 1967,
+    "strummingPattern": "D DU UDU"
+  }
+]
