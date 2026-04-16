@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply antialiased;
+  }
+
+  /* Smooth color transitions when toggling dark mode */
+  *,
+  ::before,
+  ::after {
+    transition-property: color, background-color, border-color, fill, stroke;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Opt out of color transitions for elements that should snap (e.g. animations) */
+  .no-theme-transition,
+  .no-theme-transition * {
+    transition: none !important;
+  }
+}
