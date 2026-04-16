@@ -6,6 +6,7 @@ import ChordDetailPage from './features/chords/ChordDetailPage'
 import SongsPage from './features/songs/SongsPage'
 import SongDetailPage from './features/songs/SongDetailPage'
 import MetronomePage from './features/metronome/MetronomePage'
+import TunerPage from './features/tuner/TunerPage'
 import PracticePage from './features/practice/PracticePage'
 import ProgressPage from './features/progress/ProgressPage'
 
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: 'songs', Component: SongsPage },
       { path: 'songs/:songId', Component: SongDetailPage },
       { path: 'metronome', Component: MetronomePage },
+      { path: 'tuner', Component: TunerPage },
       { path: 'practice', Component: PracticePage },
       { path: 'progress', Component: ProgressPage },
     ],

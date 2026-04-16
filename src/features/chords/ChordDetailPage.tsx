@@ -89,9 +89,9 @@ export default function ChordDetailPage() {
         {/* Large diagram */}
         <div className="flex shrink-0 flex-col items-center">
           <ChordDiagram chord={chord} className="w-48" />
-          {chord.capo && (
+          {chord.capoFret && (
             <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
-              Capo fret {chord.capo}
+              Capo fret {chord.capoFret}
             </p>
           )}
         </div>
