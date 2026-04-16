@@ -1,6 +1,4 @@
-/**
- * Geometry helpers for the ChordDiagram SVG renderer.
- */
+import type { Chord, GuitarString } from '@/types'
 
 export interface DiagramLayout {
   width: number
@@ -11,15 +9,11 @@ export interface DiagramLayout {
   padding: { top: number; right: number; bottom: number; left: number }
 }
 
-export function getDefaultLayout(
-  numFrets = 4,
-  overrides: Partial<DiagramLayout> = {},
-): DiagramLayout {
+export function getDefaultLayout(numFrets = 4): DiagramLayout {
   const stringSpacing = 32
   const fretSpacing = 36
   const dotRadius = 10
   const padding = { top: 40, right: 20, bottom: 16, left: 28 }
-
   return {
     width: stringSpacing * 5 + padding.left + padding.right,
     height: fretSpacing * numFrets + padding.top + padding.bottom,
@@ -27,16 +21,34 @@ export function getDefaultLayout(
     fretSpacing,
     dotRadius,
     padding,
-    ...overrides,
   }
 }
 
-/** X coordinate of a string (1 = high E on the right side) */
-export function stringX(string: number, layout: DiagramLayout): number {
+/** X coordinate for a string — string 6 (low E) on the left */
+export function stringX(string: GuitarString, layout: DiagramLayout): number {
   return layout.padding.left + (6 - string) * layout.stringSpacing
 }
 
-/** Y coordinate of a fret position (fret 1 = just below nut) */
-export function fretY(fret: number, layout: DiagramLayout): number {
-  return layout.padding.top + (fret - 0.5) * layout.fretSpacing
+/**
+ * Y coordinate for a dot at a diagram-relative fret position.
+ * diagFret=1 → between nut and first fret line.
+ */
+export function fretY(diagFret: number, layout: DiagramLayout): number {
+  return layout.padding.top + (diagFret - 0.5) * layout.fretSpacing
+}
+
+/**
+ * The fret at which to start the diagram.
+ * Always 1 when the chord has open strings or uses fret 1.
+ * Otherwise the lowest fret used (so the diagram doesn't waste space).
+ */
+export function computeStartFret(chord: Chord): number {
+  if (chord.openStrings.length > 0) return 1
+  const allFrets = [
+    ...chord.positions.map((p) => p.fret).filter((f) => f > 0),
+    ...(chord.barre ? [chord.barre.fret] : []),
+  ]
+  if (allFrets.length === 0) return 1
+  const min = Math.min(...allFrets)
+  return min <= 1 ? 1 : min
 }

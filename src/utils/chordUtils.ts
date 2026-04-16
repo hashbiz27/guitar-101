@@ -13,19 +13,20 @@ export function groupChordsByRoot(chords: Chord[]): Record<string, Chord[]> {
   }, {})
 }
 
-export function filterChords(
-  chords: Chord[],
-  query: string,
-  quality?: string,
-): Chord[] {
-  const q = query.toLowerCase()
+export interface ChordFilterOptions {
+  query?: string
+  difficulty?: Chord['difficulty']
+}
+
+export function filterChords(chords: Chord[], opts: ChordFilterOptions): Chord[] {
+  const q = (opts.query ?? '').toLowerCase().trim()
   return chords.filter((c) => {
     const matchesQuery =
       !q ||
       c.name.toLowerCase().includes(q) ||
       c.fullName.toLowerCase().includes(q) ||
       c.aliases.some((a) => a.toLowerCase().includes(q))
-    const matchesQuality = !quality || c.quality === quality
-    return matchesQuery && matchesQuality
+    const matchesDifficulty = !opts.difficulty || c.difficulty === opts.difficulty
+    return matchesQuery && matchesDifficulty
   })
 }
