@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/guitar-101/assets/logo-Bc1yRRmg.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guitar 101</title>
+    <!-- Restore deep-link URL after GitHub Pages 404 redirect -->
+    <script>
+      (function () {
+        var redirect = sessionStorage.getItem('spa-redirect')
+        if (redirect) {
+          sessionStorage.removeItem('spa-redirect')
+          var url = new URL(redirect)
+          history.replaceState(null, null, url.pathname + url.search + url.hash)
+        }
+      })()
+    </script>
+    <!-- Apply theme before first paint to prevent flash -->
+    <script>
+      (function () {
+        var stored = localStorage.getItem('guitar-101-theme')
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        var dark = stored ? stored === 'dark' : prefersDark
+        if (dark) document.documentElement.classList.add('dark')
+      })()
+    </script>
+    <script type="module" crossorigin src="/guitar-101/assets/index-BbVvPnAm.js"></script>
+    <link rel="stylesheet" crossorigin href="/guitar-101/assets/index-CgccAgvt.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
