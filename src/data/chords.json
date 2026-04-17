@@ -1,0 +1,220 @@
+[
+  {
+    "id": "A-major",
+    "name": "A",
+    "fullName": "A Major",
+    "aliases": [],
+    "root": "A",
+    "quality": "major",
+    "positions": [
+      { "string": 4, "fret": 2, "finger": 1 },
+      { "string": 3, "fret": 2, "finger": 2 },
+      { "string": 2, "fret": 2, "finger": 3 }
+    ],
+    "openStrings": [5, 1],
+    "mutedStrings": [6],
+    "difficulty": "beginner",
+    "tags": ["open", "cowboy"],
+    "midiNotes": [45, 52, 57, 61, 64, 69]
+  },
+  {
+    "id": "Am-minor",
+    "name": "Am",
+    "fullName": "A Minor",
+    "aliases": ["Amin"],
+    "root": "A",
+    "quality": "minor",
+    "positions": [
+      { "string": 4, "fret": 2, "finger": 2 },
+      { "string": 3, "fret": 2, "finger": 3 },
+      { "string": 2, "fret": 1, "finger": 1 }
+    ],
+    "openStrings": [5, 1],
+    "mutedStrings": [6],
+    "difficulty": "beginner",
+    "tags": ["open", "cowboy"],
+    "midiNotes": [45, 52, 57, 60, 64, 69]
+  },
+  {
+    "id": "C-major",
+    "name": "C",
+    "fullName": "C Major",
+    "aliases": [],
+    "root": "C",
+    "quality": "major",
+    "positions": [
+      { "string": 5, "fret": 3, "finger": 3 },
+      { "string": 4, "fret": 2, "finger": 2 },
+      { "string": 2, "fret": 1, "finger": 1 }
+    ],
+    "openStrings": [3, 1],
+    "mutedStrings": [6],
+    "difficulty": "beginner",
+    "tags": ["open", "cowboy"],
+    "midiNotes": [48, 52, 55, 60, 64, 67]
+  },
+  {
+    "id": "D-major",
+    "name": "D",
+    "fullName": "D Major",
+    "aliases": [],
+    "root": "D",
+    "quality": "major",
+    "positions": [
+      { "string": 3, "fret": 2, "finger": 1 },
+      { "string": 1, "fret": 2, "finger": 2 },
+      { "string": 2, "fret": 3, "finger": 3 }
+    ],
+    "openStrings": [4],
+    "mutedStrings": [6, 5],
+    "difficulty": "beginner",
+    "tags": ["open", "cowboy"],
+    "midiNotes": [50, 57, 62, 66, 69]
+  },
+  {
+    "id": "Dm-minor",
+    "name": "Dm",
+    "fullName": "D Minor",
+    "aliases": ["Dmin"],
+    "root": "D",
+    "quality": "minor",
+    "positions": [
+      { "string": 3, "fret": 2, "finger": 2 },
+      { "string": 1, "fret": 1, "finger": 1 },
+      { "string": 2, "fret": 3, "finger": 3 }
+    ],
+    "openStrings": [4],
+    "mutedStrings": [6, 5],
+    "difficulty": "beginner",
+    "tags": ["open"],
+    "midiNotes": [50, 57, 62, 65, 69]
+  },
+  {
+    "id": "E-major",
+    "name": "E",
+    "fullName": "E Major",
+    "aliases": [],
+    "root": "E",
+    "quality": "major",
+    "positions": [
+      { "string": 5, "fret": 2, "finger": 2 },
+      { "string": 4, "fret": 2, "finger": 3 },
+      { "string": 3, "fret": 1, "finger": 1 }
+    ],
+    "openStrings": [6, 2, 1],
+    "mutedStrings": [],
+    "difficulty": "beginner",
+    "tags": ["open", "cowboy"],
+    "midiNotes": [40, 47, 52, 56, 59, 64]
+  },
+  {
+    "id": "Em-minor",
+    "name": "Em",
+    "fullName": "E Minor",
+    "aliases": ["Emin"],
+    "root": "E",
+    "quality": "minor",
+    "positions": [
+      { "string": 5, "fret": 2, "finger": 2 },
+      { "string": 4, "fret": 2, "finger": 3 }
+    ],
+    "openStrings": [6, 3, 2, 1],
+    "mutedStrings": [],
+    "difficulty": "beginner",
+    "tags": ["open", "cowboy"],
+    "midiNotes": [40, 47, 52, 55, 59, 64]
+  },
+  {
+    "id": "F-major",
+    "name": "F",
+    "fullName": "F Major",
+    "aliases": [],
+    "root": "F",
+    "quality": "major",
+    "positions": [
+      { "string": 3, "fret": 2, "finger": 2 },
+      { "string": 4, "fret": 3, "finger": 4 },
+      { "string": 5, "fret": 3, "finger": 3 }
+    ],
+    "openStrings": [],
+    "mutedStrings": [],
+    "barre": { "fret": 1, "fromString": 6, "toString": 1, "finger": 1 },
+    "difficulty": "intermediate",
+    "tags": ["barre"],
+    "midiNotes": [41, 48, 53, 57, 60, 65]
+  },
+  {
+    "id": "G-major",
+    "name": "G",
+    "fullName": "G Major",
+    "aliases": [],
+    "root": "G",
+    "quality": "major",
+    "positions": [
+      { "string": 6, "fret": 3, "finger": 2 },
+      { "string": 5, "fret": 2, "finger": 1 },
+      { "string": 2, "fret": 3, "finger": 3 },
+      { "string": 1, "fret": 3, "finger": 4 }
+    ],
+    "openStrings": [4, 3],
+    "mutedStrings": [],
+    "difficulty": "beginner",
+    "tags": ["open", "cowboy"],
+    "midiNotes": [43, 47, 50, 55, 59, 67]
+  },
+  {
+    "id": "G7-dominant7",
+    "name": "G7",
+    "fullName": "G Dominant 7",
+    "aliases": [],
+    "root": "G",
+    "quality": "dominant7",
+    "positions": [
+      { "string": 6, "fret": 3, "finger": 3 },
+      { "string": 5, "fret": 2, "finger": 2 },
+      { "string": 1, "fret": 1, "finger": 1 }
+    ],
+    "openStrings": [4, 3, 2],
+    "mutedStrings": [],
+    "difficulty": "beginner",
+    "tags": ["open"],
+    "midiNotes": [43, 47, 50, 55, 59, 65]
+  },
+  {
+    "id": "Bm-minor",
+    "name": "Bm",
+    "fullName": "B Minor",
+    "aliases": ["Bmin"],
+    "root": "B",
+    "quality": "minor",
+    "positions": [
+      { "string": 4, "fret": 4, "finger": 4 },
+      { "string": 3, "fret": 4, "finger": 3 },
+      { "string": 2, "fret": 3, "finger": 2 }
+    ],
+    "openStrings": [],
+    "mutedStrings": [6],
+    "barre": { "fret": 2, "fromString": 5, "toString": 1, "finger": 1 },
+    "difficulty": "intermediate",
+    "tags": ["barre"],
+    "midiNotes": [47, 54, 59, 62, 66]
+  },
+  {
+    "id": "C-major7",
+    "name": "Cmaj7",
+    "fullName": "C Major 7",
+    "aliases": ["CM7"],
+    "root": "C",
+    "quality": "major7",
+    "positions": [
+      { "string": 5, "fret": 3, "finger": 3 },
+      { "string": 4, "fret": 2, "finger": 2 },
+      { "string": 2, "fret": 1, "finger": 1 }
+    ],
+    "openStrings": [3, 2, 1],
+    "mutedStrings": [6],
+    "difficulty": "beginner",
+    "tags": ["open", "jazz"],
+    "midiNotes": [48, 52, 55, 59, 64, 67]
+  }
+]
