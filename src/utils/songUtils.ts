@@ -25,3 +25,27 @@ export function filterSongs(
 export function getUniqueTags(songs: Song[]): string[] {
   return Array.from(new Set(songs.flatMap((s) => s.tags))).sort()
 }
+
+export interface FlatBeat {
+  sectionIndex: number
+  progressionIndex: number
+  /** 0 = first beat of this chord */
+  beatInChord: number
+  chordId: string
+}
+
+/** Expand all sections (with repeatCount) into a flat beat-by-beat array. */
+export function flattenSongBeats(song: Song): FlatBeat[] {
+  const result: FlatBeat[] = []
+  song.sections.forEach((section, sectionIndex) => {
+    const repeats = section.repeatCount ?? 1
+    for (let r = 0; r < repeats; r++) {
+      section.progression.forEach((chordBeat, progressionIndex) => {
+        for (let b = 0; b < chordBeat.beats; b++) {
+          result.push({ sectionIndex, progressionIndex, beatInChord: b, chordId: chordBeat.chordId })
+        }
+      })
+    }
+  })
+  return result
+}
