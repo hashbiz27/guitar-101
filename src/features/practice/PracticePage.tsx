@@ -115,11 +115,12 @@ export default function PracticePage() {
               <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                 Session type
               </p>
-              <div className="flex flex-wrap gap-1.5">
+              <div role="group" aria-label="Session type" className="flex flex-wrap gap-1.5">
                 {SESSION_TYPES.map(({ value, label }) => (
                   <button
                     key={value}
                     type="button"
+                    aria-pressed={sessionType === value}
                     onClick={() => setSessionType(value)}
                     className={cn(
                       'rounded-lg px-3 py-2 text-sm font-medium transition-colors',

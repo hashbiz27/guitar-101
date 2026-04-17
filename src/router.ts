@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import App from './App'
 import HomePage from './pages/HomePage'
+import NotFoundPage from './pages/NotFoundPage'
 import ChordsPage from './features/chords/ChordsPage'
 import ChordDetailPage from './features/chords/ChordDetailPage'
 import SongsPage from './features/songs/SongsPage'
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
       { path: 'tuner', Component: TunerPage },
       { path: 'practice', Component: PracticePage },
       { path: 'progress', Component: ProgressPage },
+      { path: '*', Component: NotFoundPage },
     ],
   },
 ])

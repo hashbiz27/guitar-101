@@ -1,5 +1,7 @@
 import { useMemo } from 'react'
+import { Calendar } from 'lucide-react'
 import { useProgressStore } from '@/store'
+import EmptyState from '@/components/ui/EmptyState'
 import SessionHistoryItem from './SessionHistoryItem'
 
 const DAY_ABBR = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
@@ -82,9 +84,11 @@ export default function SessionHistoryList() {
           Recent sessions
         </h2>
         {sessions.length === 0 ? (
-          <p className="py-6 text-center text-sm text-slate-400 dark:text-slate-500">
-            No sessions yet — start practicing!
-          </p>
+          <EmptyState
+            icon={Calendar}
+            title="No sessions yet"
+            description="Complete a practice session and it will appear here."
+          />
         ) : (
           <div>
             {sessions.slice(0, 30).map((session) => (

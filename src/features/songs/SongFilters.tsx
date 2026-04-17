@@ -17,11 +17,12 @@ const OPTIONS: { label: string; value: DifficultyFilter }[] = [
 
 export default function SongFilters({ value, onChange }: Props) {
   return (
-    <div className="flex flex-wrap gap-1.5">
+    <div role="group" aria-label="Filter by difficulty" className="flex flex-wrap gap-1.5">
       {OPTIONS.map((opt) => (
         <button
           key={opt.value}
           type="button"
+          aria-pressed={value === opt.value}
           onClick={() => onChange(opt.value)}
           className={cn(
             'rounded-lg px-3 py-2 text-sm font-medium transition-colors',
